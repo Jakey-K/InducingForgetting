@@ -1,0 +1,45 @@
+# python build/cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# venvs
+.venv/
+venv/
+env/
+ENV/
+
+# os
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ides being ides
+.vscode/
+.idea/
+*.code-workspace
+
+*.log
+
+# experiment outputs (don’t commit participant data)
+data/*.csv
+data/*.json
+data/*state*.json
+*.psydat
+
+# stimuli & masks
+images/
+masks/
+
+# keep the folders themselves
+!images/.gitkeep
+!masks/.gitkeep
+!data/.gitkeep
+!scripts/DATA/.gitkeep

@@ -1,0 +1,66 @@
+
+=== RM-ANOVA: Accuracy ===
+      Source         F     p-unc       ng2
+0  Condition  7.702128  0.013652  0.103488
+1      Error       NaN       NaN       NaN
+
+=== Post-hoc Tests: Accuracy ===
+          A        B         T    p-corr    hedges      BF10
+0  Baseline  NoThink -4.492116  0.032664 -0.662570  6.628025
+1  Baseline    Think -2.880773  0.089956 -0.511367  2.392360
+2   NoThink    Think  0.875000  0.430969  0.161245  0.532459
+
+=== RM-ANOVA: Confidence ===
+      Source         F     p-unc       ng2
+0  Condition  6.379147  0.022059  0.205183
+1      Error       NaN       NaN       NaN
+
+=== Post-hoc Tests: Confidence ===
+          A        B         T    p-corr    hedges      BF10
+0  Baseline  NoThink -3.441667  0.078761 -0.939386  3.516327
+1  Baseline    Think -1.324169  0.256044 -0.313869  0.724938
+2   NoThink    Think  2.064187  0.215878  0.644923  1.291268
+
+=== RM-ANOVA: RecallScore ===
+      Source         F     p-unc       ng2
+0  Condition  8.095436  0.011961  0.162286
+1      Error       NaN       NaN       NaN
+
+=== Post-hoc Tests: RecallScore ===
+          A        B         T    p-corr    hedges       BF10
+0  Baseline  NoThink -5.756193  0.013553 -0.854476  12.532895
+1  Baseline    Think -2.209268  0.183402 -0.486379   1.446333
+2   NoThink    Think  1.535738  0.199403  0.402010   0.851974
+
+=== RM-ANOVA: Gist ===
+      Source         F     p-unc       ng2
+0  Condition  4.127786  0.058661  0.075951
+1      Error       NaN       NaN       NaN
+
+=== Post-hoc Tests: Gist ===
+          A        B         T    p-corr    hedges      BF10
+0  Baseline  NoThink -2.841520  0.140387 -0.564796  2.325800
+1  Baseline    Think -1.545335  0.394314 -0.287427  0.858349
+2   NoThink    Think  1.383185  0.394314  0.282603  0.757840
+
+=== GEE: Identification ===
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:              Identification   No. Observations:                   15
+Model:                                 GEE   No. clusters:                        5
+Method:                        Generalized   Min. cluster size:                   3
+                      Estimating Equations   Max. cluster size:                   3
+Family:                           Binomial   Mean cluster size:                 3.0
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Sun, 21 Sep 2025   Scale:                           1.000
+Covariance type:                    robust   Time:                         18:45:37
+==================================================================================================================
+                                                     coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------
+Intercept                                          0.4895      0.423      1.158      0.247      -0.339       1.318
+C(Condition, Treatment('Baseline'))[T.NoThink]     0.8967      0.391      2.294      0.022       0.131       1.663
+C(Condition, Treatment('Baseline'))[T.Think]       0.8967      0.195      4.609      0.000       0.515       1.278
+==============================================================================
+Skew:                          0.0436   Kurtosis:                      -0.3996
+Centered skew:                 0.4865   Centered kurtosis:             -0.8522
+==============================================================================

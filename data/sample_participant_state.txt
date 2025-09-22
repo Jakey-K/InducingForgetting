@@ -1,0 +1,3 @@
+THIS IS A SAMPLE DATA SET TO SHOW THE STRUCTURE OF THE OUTPUT 
+
+{"currentPhase": "Completed", "currentTrial": 0}
