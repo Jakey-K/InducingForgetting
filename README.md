@@ -15,6 +15,7 @@ Also, all the stimuli images are from OASIS and IAPS. For that reason, they are 
 - [Info](#info)
 - [Tested Systems/Versions](#tested-systemsversions)
 - [Original Experiment](#original-experiment)
+- [Extra Reading](#extra-reading)
 
 ## Project Structure
 
@@ -148,5 +149,13 @@ Has worked fine with minimal issues -- timing checks via screen recordings and h
 ## Original Experiment
 
 Z. Zhu, M. C. Anderson, and Y. Wang, “Inducing forgetting of unwanted memories through subliminal reactivation,” Nature Communications, vol. 13, no. 1, Oct. 2022, doi: <https://doi.org/10.1038/s41467-022-34091-1>.
+
+## Extra Reading
+
+Both of these studies were instrumental to my designing of the experiment paradigm:
+
+D. Nardo and M. C. Anderson, “Everything you ever wanted to know about the think/no-think task, but forgot to ask,” Behavior research methods, vol. 56, Feb. 2024, doi: <https://doi.org/10.3758/s13428-024-02349-9>.
+
+J. A. Harris, C.-T. . Wu, and M. G. Woldorff, “Sandwich masking eliminates both visual awareness of faces and face-specific brain activity through a feedforward mechanism,” Journal of Vision, vol. 11, no. 7, pp. 3–3, Jun. 2011, doi: <https://doi.org/10.1167/11.7.3>.
 
 [Back to top](#table-of-contents)
