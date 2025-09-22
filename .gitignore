@@ -1,9 +1,7 @@
 # python build/cache
 __pycache__/
-*.pyc
 *.pyo
 *.pyd
-*.so
 *.egg-info/
 .eggs/
 build/

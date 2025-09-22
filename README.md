@@ -18,6 +18,7 @@ Also, all the stimuli images are from OASIS and IAPS. For that reason, they are 
 
 ## Project Structure
 
+```pre
 ├── README.md
 ├── requirements.txt              # pip install -r requirements.txt
 ├── data/                         # participant CSV + state files
@@ -45,6 +46,7 @@ Also, all the stimuli images are from OASIS and IAPS. For that reason, they are 
         ├── boxplotSingle.py      # plots a single boxplot
         └── boxplotDouble.py      # two metrics, side-by-side
     └── DATA/                     # means of different conditions from each experiment (data supplied from my own experiment)
+```
 
 ## Tutorial
 
@@ -58,8 +60,11 @@ pip install -r requirements.txt
 ```
 
 Step 2:
+
 (1) Add your stimuli. This repo does NOT include my images due to OASIS/IAPS licensing concerns. Place 110 images, named 1.jpg, 2.jpg, ... 110.jpg in /images.
+
 (2) Then resize your images to a consistent height. This is optional, but I would personally recommend it. Running resize.py will resize all images in /images, default height 400px and keeps aspect ratio.
+
 (3) Then generate your masks. By running mask.py, all images in /images will generate equivalent mask images in /masks.
 
 Step 3:
@@ -111,8 +116,11 @@ python scripts\boxplots\boxplotDouble.py
 ## Info
 
 PsychoPy is frame-locked, but this repo did not include photodiode verification; expect small timing noise outside a lab. This is particularly relevant for this experiment, as keeping  bystander cues appearing subliminally, so as close to 15ms as possible, is imperative.
+
 Run this experiment on 60hz refresh rate, even if the monitor can handle 144hz, 240hz, 360hz, 500hz, etc. 1 frame is ~16ms.
-Disable Game Mode and Freesync/G-Sync/whatever variable refresh rates. Keep monitor plugged into GPU if possible. Enable high performance power plans, especially if on a laptop. Optionally, you can also try and maximise the bystander cue presentation consistency by using a program like Process Lasso to keep PsychoPy bound to CPU core #0 on high priority.
+
+Disable Game Mode and Freesync/G-Sync/whatever variable refresh rates. Keep monitor plugged into GPU if possible. Enable high performance power plans, especially if on a laptop.
+
 Especially if the monitor is not OLED, attempt to keep the participant looking straight at the monitor, with a consistent viewing angle for all participants.
 
 For optimal results, try to minimise delays between phases (while balancing the participant's focus) and seriously hammer in that they should not be substituting thoughts during No-Think trials.
