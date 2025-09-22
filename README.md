@@ -1,9 +1,6 @@
 
 # Inducing Forgetting of Unwanted Memories Through Subliminal Reactivation
 
-Jaikaran Kelley
-2207367
-
 If you've been handed this project and need help with anything, feel free to reach out: <jakeykelley@gmail.com>.
 
 This was built for my Capstone research project. I was not able to fully conduct a laboratory EEG & GSR experiment with a significant sample size due to the ethics timeline taking over 3 months (too close to the Capstone deadline). If someone inherits this, I would love to help and see the study flourish. The full EEG & GSR acquisition modules are already nearly done, albeit they are commented out/missing in this repo. I have the code saved separately -- reach out and I'd be happy to share it.
