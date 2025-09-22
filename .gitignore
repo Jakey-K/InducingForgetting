@@ -32,12 +32,8 @@ data/*.json
 data/*state*.json
 *.psydat
 
-# stimuli & masks
-images/
-masks/
-
-# keep the folders themselves
+# stimuli & masks (ignore contents, keep .gitkeep)
+images/*
 !images/.gitkeep
+masks/*
 !masks/.gitkeep
-!data/.gitkeep
-!scripts/DATA/.gitkeep
