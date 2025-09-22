@@ -7,14 +7,14 @@ This was built for my Capstone research project. I was not able to fully conduct
 
 Also, all the stimuli images are from OASIS and IAPS. For that reason, they are not included in this repo. If institutionally permitted, I would be happy to share the exact set I curated (I spent a long time considering emotional aversiveness (in an attempt to balance participant comfort with potential GSR impact)).
 
-## README Chapters
+## Table of Contents
 
-- Project Structure
-- Tutorial
-- Analysis and Plots
-- Info
-- Tested Systems/Versions
-- Original Experiment
+- [Project Structure](#project-structure)
+- [Tutorial](#tutorial)
+- [Analysis and Plots](#analysis-and-plots)
+- [Info](#info)
+- [Tested Systems/Versions](#tested-systemsversions)
+- [Original Experiment](#original-experiment)
 
 ## Project Structure
 
@@ -148,3 +148,5 @@ Has worked fine with minimal issues -- timing checks via screen recordings and h
 ## Original Experiment
 
 Z. Zhu, M. C. Anderson, and Y. Wang, “Inducing forgetting of unwanted memories through subliminal reactivation,” Nature Communications, vol. 13, no. 1, Oct. 2022, doi: <https://doi.org/10.1038/s41467-022-34091-1>.
+
+[Back to top](#table-of-contents)
