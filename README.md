@@ -284,4 +284,7 @@ Z. M. Bergström, J. W. de Fockert, and A. Richardson-Klavehn, “ERP and behavi
 
 S. Hüttermann, D. Memmert, D. J. Simons, and O. Bock, “Fixation Strategy Influences the Ability to Focus Attention on Two Spatially Separate Objects,” PLoS ONE, vol. 8, no. 6, p. e65673, Jun. 2013, doi: <https://doi.org/10.1371/journal.pone.0065673>.
 
+Contact: <jakeykelley@gmail.com>
+License: MIT
+
 [Back to top](#table-of-contents)
