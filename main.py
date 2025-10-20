@@ -79,7 +79,7 @@ def runExperiment():
         currentTrial = 0
         tntBlockIndex = 0
 
-    win = visual.Window(size=(1920, 1080), fullscr=False, color="black", units="pix")
+    win = visual.Window(size=(1920, 1080), fullscr=True, color="black", units="pix")
 
     try:
         if currentPhase in [None, "Learning"]:

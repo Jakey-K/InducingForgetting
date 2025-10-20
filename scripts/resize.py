@@ -2,12 +2,6 @@ from PIL import Image
 import os
 from pathlib import Path
 
-###### HARD CODED PATH ######
-###### HARD CODED PATH ######
-###### HARD CODED PATH ######
-###### HARD CODED PATH ######
-# folder_path = "C:/Users/Jakey/Documents/py/CE301/24-25_CE301_kelley_jaikaran_s/images"
-# ^ removed; now auto-resolves relative to this repo:
 folder_path = str(Path(__file__).resolve().parents[1] / "images")
 
 # there is 100 images in the folder
