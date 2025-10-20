@@ -80,6 +80,7 @@ pip install -r requirements.txt
 (2) Optional: resize your images to a consistent height. Running resize.py will resize all images in /images, default height 400px and keeps aspect ratio.
 
 (3) Generate your masks. By running mask.py, all images in /images will generate equivalent mask images in /masks. Example mask:
+
 ![Masked Version](./figures/pepsimask.jpg)
 
 ### Step 3
