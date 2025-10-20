@@ -75,12 +75,12 @@ pip install -r requirements.txt
 ### Step 2
 
 (1) Add your target images. This repo does NOT include my images due to OASIS/GAPED/IAPS licensing concerns. Place x images, named 1.jpg, 2.jpg, ... x.jpg in /images. Modify program if x != 110. Example target image:
-[Normal Image](./figures/pepsi.jpg)
+![Normal Image](./figures/pepsi.jpg)
 
 (2) Optional: resize your images to a consistent height. Running resize.py will resize all images in /images, default height 400px and keeps aspect ratio.
 
 (3) Generate your masks. By running mask.py, all images in /images will generate equivalent mask images in /masks. Example mask:
-[Masked Version](./figures/pepsimask.jpg)
+![Masked Version](./figures/pepsimask.jpg)
 
 ### Step 3
 
@@ -129,41 +129,41 @@ python scripts\boxplots\boxplotDouble.py
 
 ## Paradigm Walkthrough
 
-[Timeline](./figures/timeline.png)
+![Timeline](./figures/timeline.png)
 
 The program follows a modified Think/No-Think paradigm. During the Think/No-Think phase, sandwich-masked bystander targets will be subliminally presented throughout each trial.
 When you run main.py, the program will ask you to input your participant ID. In the case of the program crashing, you can use this to restore progress.
 
-[Log-in Screen](./figures/login.png)
-[Progress Restoration](./figures/resume.png)
+![Log-in Screen](./figures/login.png)
+![Progress Restoration](./figures/resume.png)
 
 First phase is the Learning Phase. Participants will be shown each cue-target word-image pair one-by-one.
 
-[Learning Phase](./figures/learning.png)
+![Learning Phase](./figures/learning.png)
 
 Next is the Test-Feedback loop. Participants go through the loop until they can achieve a certain accuracy in a given loop (I have it set at 70%). In the original experiment, participants were not allowed to progress onto the actual experiment if they could not pass the loop within a certain amount of tries.
 
-[Test-Feedback Loop](./figures/testfeedback.png)
+![Test-Feedback Loop](./figures/testfeedback.png)
 
 Next is the Think/No-Think Practice phase. In this, it is important the examiner assesses whether the participant is actively suppressing recall during No-Think trials or not. When the cue (word) appears in green, participants must think about the associated target (image). You can repeat the practice phase if needed by changing the participant's state.json file in /data/.
 
-[Think Trial](./figures/think.png)
-[No-Think Trial](./figures/nothink.png)
+![Think Trial](./figures/think.png)
+![No-Think Trial](./figures/nothink.png)
 
 Next is the actual Think/No-Think phase. The phase will be split up into blocks as to help participants with their focus. Rest periods are granted between each block and last 30 seconds as a minimum. Fixation crosses precede each trial in order to aid participant focus. During trials, a bystander target will be shown to the participant for ~16ms (1 frame @ 60hz); below the threshold of conscious recognition (along with sandwich masking to help prevent recognition).
 
-[Rest Prompt](./figures/rest.png)
-[Fixation Cross](./figures/fixation.png)
+![Rest Prompt](./figures/rest.png)
+![Fixation Cross](./figures/fixation.png)
 
 The subliminal flash and sandwich masking proces is shown below (do note the frame counter is not present in the experiment):
 
-[Subliminal Flash & Sandwich Mask](./figures/subliminal.gif)
+![Subliminal Flash & Sandwich Mask](./figures/subliminal.gif)
 
 After the Think/No-Think phase, there will be a prompt for an optional Pair Refresher Phase. Useful during experiments where there was too long of a break after the Think/No-Think phase.In the Final Recall Phase, participants see a target word and they must then attempt to recall what the associated cue word is. Examiners judge the accuracy and confidence (rated 1-5) as well as the gist and identification value for each attempt. Gist score is the proportion of identifiable features in the image the participant mentioned (i.e. "blue sky", "red dog" would score 0.4 if there were 5 features). Identification is a boolean value, whether the participant recalled the image or not.
 
 Examiner inputs a value then presses Enter after filling out each line. If they are to input a wrong value or just want to change a previous value, they can press Backspace and modify their previous entries (per trial). Upon the first key press by the examiner for each trial, reaction time is measured and logged.
 
-[Final Recall Phase](./figures/finalrecall.png)
+![Final Recall Phase](./figures/finalrecall.png)
 
 ## Figures and Findings
 
