@@ -142,7 +142,7 @@ First phase is the Learning Phase. Participants will be shown each cue-target wo
 
 ![Learning Phase](./figures/learning.png)
 
-Next is the Test-Feedback loop. Participants go through the loop until they can achieve a certain accuracy in a given loop (I have it set at 70%). In the original experiment, participants were not allowed to progress onto the actual experiment if they could not pass the loop within a certain amount of tries.
+Next is the Test-Feedback loop. Participants go through the loop until they can achieve a certain accuracy in a given loop (I have it set at 65%). In the original experiment, participants were not allowed to progress onto the actual experiment if they could not pass the loop within a certain amount of tries.
 
 ![Test-Feedback Loop](./figures/testfeedback.png)
 
