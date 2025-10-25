@@ -49,8 +49,6 @@ def run_once(data_dir: Path, dataset: str):
     with open(log_path, "w", encoding="UTF-8") as log:
         names = ["Think","Baseline","NoThink"]
 
-        ###### HARD CODED PATHS ######
-        ###### REMOVED: now built from settings.DATA_DIR + dataset ######
         rs   = load_metric_csv(settings.DATA_DIR, prefix, "rs",   names)
         acc  = load_metric_csv(settings.DATA_DIR, prefix, "acc",  names)
         con  = load_metric_csv(settings.DATA_DIR, prefix, "con",  names)
