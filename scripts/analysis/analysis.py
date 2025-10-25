@@ -1,13 +1,12 @@
 from pathlib import Path
 import sys
 
-# make 'scripts/' importable so we can 'import settings'
-THIS_DIR   = Path(__file__).resolve().parent        # scripts/analysis
-SCRIPTS_DIR= THIS_DIR.parent                         # scripts/
+THIS_DIR   = Path(__file__).resolve().parent        
+SCRIPTS_DIR= THIS_DIR.parent                        
 if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
-import settings                                      # <- edit settings.py instead of CLI flags
+import settings                                  
 
 import pandas as pd
 import pingouin as pg
@@ -40,10 +39,10 @@ def melt_df(df, colname):
 def run_once(data_dir: Path, dataset: str):
     # choose prefix + log name
     if dataset == "tnt":
-        prefix = ""                   # exactly matches your TNT filenames
+        prefix = ""                   
         log_name = "TNTresult.txt"
     else:
-        prefix = "nas "               # exactly matches your NAS filenames
+        prefix = "nas "
         log_name = "NASresult.txt"
 
     log_path = settings.OUTPUT_DIR / log_name
